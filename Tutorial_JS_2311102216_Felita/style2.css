@@ -1,0 +1,96 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    color: #0099ff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Tombol Kontrol */
+.btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Grid Menu Utama */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    color: white;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.card i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.5rem;
+}
+
+/* Variasi Warna Box */
+.bg-green { background-color: #28a745; }
+.bg-orange { background-color: #fd7e14; }
+.bg-red { background-color: #dc3545; }
+.bg-blue { background-color: #17a2b8; }
+.bg-yellow { background-color: #ffc107; }
+.bg-green-light { background-color: #2ecc71; }
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Media Layout</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .btn-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        /* Style tombol agar konsisten dengan CSS utama */
+        .btn-container button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">ONLINE <span>MEDIA</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">STRATEGY</a></li>
+            <li><a href="#">SOLUSI</a></li>
+            <li><a href="#">MARKETING</a></li>
+            <li><a href="#">WORKSHOP</a></li>
+            <li><a href="#">OUR WORK</a></li>
+            <li><a href="#">PRODUK</a></li>
+            <li><a href="#">PARTNER</a></li>
+            <li><a href="#">INSPIRASI</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="btn-container">
+        <button onclick="changeAlignment()">Ubah Posisi Teks (Center/Right)</button>
+        <button onclick="toggleBoxColor()">Ubah Warna Box Analytic</button>
+    </div>
+
+    <main class="grid-container">
+        <div class="card bg-green">
+            <i class="fas fa-chart-pie"></i>
+            <p>Analytic</p>
+        </div>
+        <div class="card bg-orange">
+            <i class="fas fa-thermometer-half"></i>
+            <p>Creative</p>
+        </div>
+        <div class="card bg-red">
+            <i class="fas fa-desktop"></i>
+            <p>Development</p>
+        </div>
+        <div class="card bg-blue">
+            <i class="fas fa-cog"></i>
+            <p>Marketing</p>
+        </div>
+        <div class="card bg-yellow">
+            <i class="fas fa-play-circle"></i>
+            <p>Media</p>
+        </div>
+        <div class="card bg-green-light">
+            <i class="fas fa-rocket"></i>
+            <p>Optimitation</p>
+        </div>
+    </main>
+
+    <div style="text-align: center; margin-top: 40px; font-style: italic; color: #666;">
+        Semoga hari ini penuh berkah, tetap fokus dan jangan lupa mengingat Allah di sela kesibukan Anda.
+    </div>
+
+    <script>
+        // --- Bagian A: Fungsi Matematika Bilangan Ganjil ---
+        // Tetap ada di sini agar syarat soal terpenuhi (bisa dicek lewat console)
+        function calculateOddSum(min, max) {
+            let total = 0;
+            for (let i = min; i <= max; i++) {
+                if (i % 2 !== 0) {
+                    total += i;
+                }
+            }
+            return total;
+        }
+        
+        // Output otomatis ke console saat halaman dimuat
+        console.log("Hasil Ganjil (1-8):", calculateOddSum(1, 8));
+        console.log("Hasil Ganjil (4-15):", calculateOddSum(4, 15));
+
+        // --- Bagian B: Manipulasi Tampilan ---
+        let alignState = 0; 
+        let isColorChanged = false;
+
+        function changeAlignment() {
+            const cards = document.querySelectorAll('.card');
+            alignState = (alignState + 1) % 3;
+            
+            let alignment = "flex-start"; 
+            if (alignState === 1) alignment = "center";
+            if (alignState === 2) alignment = "flex-end";
+
+            cards.forEach(card => {
+                card.style.alignItems = alignment;
+                card.style.textAlign = (alignment === "flex-end") ? "right" : 
+                                     (alignment === "center") ? "center" : "left";
+            });
+        }
+
+        function toggleBoxColor() {
+            const analyticBox = document.querySelector('.card.bg-green');
+            isColorChanged = !isColorChanged;
+            analyticBox.style.backgroundColor = isColorChanged ? "#8e44ad" : ""; 
+        }
+    </script>
+</body>
+</html>
