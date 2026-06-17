@@ -1,0 +1,260 @@
+/* Felita Salma-2311102216 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.container {
+    width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.top {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 160px;
+    height: 120px;
+    background-color: #22c55e;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo h2 {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.header {
+    flex: 1;
+    height: 120px;
+    background-color: #22c55e;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.navigasi {
+    width: 180px;
+    min-height: 380px;
+    background-color: #f3f4f6;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+}
+
+.navigasi h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #15803d;
+    font-size: 22px;
+}
+
+.navigasi ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navigasi ul li {
+    margin-bottom: 12px;
+}
+
+.navigasi ul li a {
+    display: block;
+    text-decoration: none;
+    color: #1f2937;
+    background-color: #ffffff;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-left: 5px solid #22c55e;
+    transition: 0.3s;
+}
+
+.navigasi ul li a:hover {
+    background-color: #22c55e;
+    color: white;
+}
+
+.content {
+    width: 390px;
+}
+
+.judul {
+    background-color: #f3f4f6;
+    border-left: 6px solid #22c55e;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.judul h2 {
+    margin-bottom: 6px;
+    color: #15803d;
+}
+
+.judul p {
+    font-size: 14px;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d1d5db;
+}
+
+table th,
+table td {
+    padding: 10px;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 1px solid #d1d5db;
+}
+
+table th {
+    background-color: #22c55e;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+table tr:hover {
+    background-color: #dcfce7;
+}
+
+.content h3 {
+    margin-bottom: 12px;
+    color: #15803d;
+}
+
+form {
+    background-color: #f3f4f6;
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #d1d5db;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #22c55e;
+}
+
+button {
+    margin-top: 14px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #22c55e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #15803d;
+}
+
+button[type="reset"] {
+    background-color: #6b7280;
+    margin-left: 8px;
+}
+
+button[type="reset"]:hover {
+    background-color: #4b5563;
+}
+
+.sidebar {
+    width: 180px;
+    min-height: 200px;
+    background-color: #f3f4f6;
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #d1d5db;
+}
+
+.sidebar h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #15803d;
+}
+
+.sidebar p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    border-left: 5px solid #22c55e;
+}
+
+.footer {
+    margin-left: 205px;
+    margin-top: 35px;
+    background-color: #22c55e;
+    color: white;
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 14px;
+}

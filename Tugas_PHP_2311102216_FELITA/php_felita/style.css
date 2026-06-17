@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width:400px;
+    margin:50px auto;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:inline-block;
+    width:100px;
+}
+
+input{
+    padding:8px;
+    width:200px;
+}
+
+.btn{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.link{
+    margin-left:20px;
+}
+
+.message{
+    margin-top:20px;
+    font-size:20px;
+}
